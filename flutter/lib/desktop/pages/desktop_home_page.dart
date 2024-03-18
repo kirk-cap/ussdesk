@@ -471,11 +471,11 @@ class _DesktopHomePageState extends State<DesktopHomePage>
 
     if (Platform.isWindows && !bind.isDisableInstallation()) {
       if (!bind.mainIsInstalled()) {
-        return buildInstallCard(
-            "", bind.isOutgoingOnly() ? "" : "install_tip", "Install",
-            () async {
-          await rustDeskWinManager.closeAllSubWindows();
-          bind.mainGotoInstall();
+        // return buildInstallCard(
+        //     "", bind.isOutgoingOnly() ? "" : "install_tip", "Install",
+        //     () async {
+        //   await rustDeskWinManager.closeAllSubWindows();
+        //   bind.mainGotoInstall();
         });
       } else if (bind.mainIsInstalledLowerVersion()) {
         return buildInstallCard(
