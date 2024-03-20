@@ -626,7 +626,7 @@ abstract class BasePeerCard extends StatelessWidget {
         await bind.mainSetPeerOption(
             id: id,
             key: kOptionForceAlwaysRelay,
-            value: bool2option(kOptionForceAlwaysRelay, v));
+            value: bool2option(kOptionForceAlwaysRelay, true));
         showToast(translate('Successful'));
       },
       padding: menuPadding,
